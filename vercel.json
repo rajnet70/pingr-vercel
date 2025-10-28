@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "functions": {
-    "api/pingr.py": {
-      "runtime": "python3.9",
-      "maxDuration": 60
+  "builds": [
+    {
+      "src": "api/pingr.py",
+      "use": "@vercel/python"
     }
-  },
+  ],
   "routes": [
-    { "src": "/pingr", "dest": "/api/pingr.py" }
+    {
+      "src": "/(.*)",
+      "dest": "api/pingr.py"
+    }
   ]
 }
