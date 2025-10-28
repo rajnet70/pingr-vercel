@@ -1,15 +1,9 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "api/pingr.py",
-      "use": "@vercel/python"
-    }
+    { "src": "api/pingr.py", "use": "@vercel/python" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/pingr.py"
-    }
+    { "src": "/(.*)", "dest": "api/pingr.py" }
   ]
 }
