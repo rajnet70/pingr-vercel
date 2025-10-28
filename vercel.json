@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "functions": {
+    "api/pingr.py": {
+      "runtime": "python3.9",
+      "maxDuration": 60
+    }
+  },
+  "routes": [
+    { "src": "/pingr", "dest": "/api/pingr.py" }
+  ]
+}
